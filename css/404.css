@@ -1,0 +1,33 @@
+main{
+    grid-template-areas: 
+    "logo      logo      logo"
+    "space     space     space"
+    "error     error     error"
+    "bottom    bottom    bottom";
+}
+
+a{
+    font-size: 200px;
+}
+
+
+#error{
+    grid-area: error;
+    align-items: center;
+}
+
+
+@media(max-width:800px){
+	main{
+        grid-template-areas: 
+        "logo"
+        "space"
+        "error"
+        "bottom";
+    }
+
+    a{
+        font-size: 200px;
+    }
+    
+}
