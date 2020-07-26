@@ -1,27 +1,30 @@
-const texts = ['SL','Spider','.ga'];
+const logoText = document.querySelector('.animation');
+const strText = logoText.textContent;
 
-let count = 0;
-let index = 0;
+const splitText = strText.split("");
 
-let currentText = '';
+logoText.textContent = "";
 
-let letter = '';
+for(let i=0; i < splitText.length; i++){
 
-(function type(){
+    logoText.innerHTML += "<span>" + splitText[i] + "</span>";    
+}
 
-    if(count === texts.length){
+let char = 0;
+let timer = setInterval(onTick, 50);
 
-        count = 0;
+function onTick(){
+
+    const span = logoText.querySelectorAll('span')[char];
+    span.classList.add('fade');
+    char++;
+    if(char === splitText.length){
+        complete();
+        return;
     }
-    currentText = texts[count];
-    letter = currentText.slice(0,++index);
+}
 
-    document.querySelector('.typing').textContent = letter;
-    if(letter.length === currentText.length){
-        count++;
-        index = 0;
-    }
-
-    setTimeout(type,400);
-
-}());
+function complete(){
+    clearInterval(timer);
+    timer = null;
+}
