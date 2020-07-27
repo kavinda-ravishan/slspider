@@ -1,0 +1,35 @@
+main{
+    grid-template-areas: 
+    "logo      logo      logo"
+    "space     space     space"
+    "Video_1   Video_2   Video_3"
+    "bottom    bottom    bottom";
+}
+
+a{
+    font-size: 50px;
+}
+
+
+#error{
+    grid-area: error;
+    align-items: center;
+}
+
+
+@media(max-width:800px){
+	main{
+        grid-template-areas: 
+        "logo"
+        "space"
+        "Video_1"
+        "Video_2"
+        "Video_3"
+        "bottom";
+    }
+
+    a{
+        font-size: 200px;
+    }
+    
+}
