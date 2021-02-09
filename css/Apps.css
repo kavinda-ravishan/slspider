@@ -1,6 +1,6 @@
 main{
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1.5fr 1fr 2fr 2fr 1fr;
     grid-template-areas: 
         "logo"
         "space"
@@ -32,19 +32,7 @@ main{
 }
 
 @media(max-width:800px){
-	main{
-        grid-template-areas: 
-        "logo"
-        "space"
-        "androidApp1"
-        "androidApp2"
-        "bottom";
-    }
-
-    a{
-        font-size: 20px;
-    }
-
+    
     #androidApp1 a:hover{
         font-size: 30px;
     }

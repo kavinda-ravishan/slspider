@@ -1,4 +1,6 @@
 main{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 2fr 1fr;
     grid-template-areas: 
     "logo      logo      logo"
     "space     space     space"
@@ -8,7 +10,9 @@ main{
 
 @media(max-width:800px){
 	main{
-        grid-template-areas: 
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.5fr 0.5fr 2fr 2fr 2fr 1fr;
+        grid-template-areas:
         "logo"
         "space"
         "Video_1"
