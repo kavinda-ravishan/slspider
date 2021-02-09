@@ -1,0 +1,42 @@
+main{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 1fr 2fr 2fr 1fr;
+    grid-template-areas: 
+        "logo"
+        "space"
+        "androidApp1"
+        "androidApp2"
+        "bottom";
+}
+
+#androidApp1{
+    grid-area: androidApp1;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+#androidApp1 a:hover{
+    color: rgb(165, 199, 57);
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+    font-size: 40px;
+    opacity: 100%;
+}
+
+#androidApp2{
+    grid-area: androidApp2;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+#androidApp2 a:hover{
+    color: rgb(165, 199, 57);
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+    font-size: 40px;
+    opacity: 100%;
+}
+
+@media(max-width:800px){
+    
+    #androidApp1 a:hover{
+        font-size: 30px;
+    }
+    #androidApp2 a:hover{
+        font-size: 30px;
+    }
+}
