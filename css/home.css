@@ -1,16 +1,16 @@
-span{
-    opacity: 0;
-    transform: all 0.4s ease;
+span {
+  opacity: 0;
+  transform: all 0.4s ease;
 }
 
-span.fade{
-    opacity: 1;
+span.fade {
+  opacity: 1;
 }
 
-main{
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1.5fr 1fr 2fr 2fr 1fr;
-    grid-template-areas: 
+main {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr 1fr 2fr 2fr 1fr;
+  grid-template-areas:
     "logo      logo      logo"
     "space     space     space"
     "app1      app2      app3"
@@ -18,95 +18,92 @@ main{
     "bottom    bottom    bottom";
 }
 
-#app1{
-    grid-area: app1;
+#app1 {
+  grid-area: app1;
 
-    background-image: url(../images/home.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+  background-image: url(../images/home.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 
-    opacity: 80%;
+  opacity: 80%;
 }
-#app1_text{
-    grid-area: app1_text;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+#app1_text {
+  grid-area: app1_text;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 }
-#app1_text a:hover{
-    color: rgb(22, 151, 209);
-    text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
-    font-size: 40px;
-    opacity: 100%;
-
-}
-
-
-#app2{
-    grid-area: app2;
-
-    background-image: url(../images/video.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-
-    opacity: 80%;
-}
-#app2_text{
-    grid-area: app2_text;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
-}
-#app2_text a:hover{
-    color: rgb(230, 45, 39);
-    text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
-    font-size: 40px;
-    opacity: 100%;
+#app1_text a:hover {
+  color: rgb(22, 151, 209);
+  text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  font-size: 40px;
+  opacity: 100%;
 }
 
-#app3{
-    grid-area: app3;
+#app2 {
+  grid-area: app2;
 
-    background-image: url(../images/app.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+  background-image: url(../images/github.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 
-    opacity: 80%;
+  opacity: 80%;
 }
-#app3_text{
-    grid-area: app3_text;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.5)
+#app2_text {
+  grid-area: app2_text;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 }
-#app3_text a:hover{
-    color: rgb(165, 199, 57);
-    text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
-    font-size: 40px;
-    opacity: 100%;
+#app2_text a:hover {
+  color: rgb(192, 35, 255);
+  text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  font-size: 40px;
+  opacity: 100%;
 }
 
-@media(max-width:800px){
-	main{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1.5fr 0.5fr 2fr 1fr 2fr 1fr 2fr 1fr;
-        grid-template-areas: 
-        "logo"
-        "space"
-        "app1"
-        "app1_text"
-        "app2"      
-        "app2_text"
-        "app3"
-        "app3_text" 
-        "bottom";
-    }
+#app3 {
+  grid-area: app3;
 
-    #app1_text a:hover{
-        font-size: 30px;
-    }
-    #app2_text a:hover{
-        font-size: 30px;
-    }
-    #app3_text a:hover{
-        font-size: 30px;
-    }
-    
+  background-image: url(../images/app.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  opacity: 80%;
+}
+#app3_text {
+  grid-area: app3_text;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+#app3_text a:hover {
+  color: rgb(165, 199, 57);
+  text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  font-size: 40px;
+  opacity: 100%;
+}
+
+@media (max-width: 800px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 0.5fr 2fr 1fr 2fr 1fr 2fr 1fr;
+    grid-template-areas:
+      "logo"
+      "space"
+      "app1"
+      "app1_text"
+      "app2"
+      "app2_text"
+      "app3"
+      "app3_text"
+      "bottom";
+  }
+
+  #app1_text a:hover {
+    font-size: 30px;
+  }
+  #app2_text a:hover {
+    font-size: 30px;
+  }
+  #app3_text a:hover {
+    font-size: 30px;
+  }
 }
