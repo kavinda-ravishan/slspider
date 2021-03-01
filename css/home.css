@@ -9,10 +9,9 @@ span.fade {
 
 main {
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1.5fr 1fr 2fr 2fr 1fr;
+  grid-template-rows: 1.5fr 2fr 1fr 1fr;
   grid-template-areas:
     "logo      logo      logo"
-    "space     space     space"
     "app1      app2      app3"
     "app1_text app2_text app3_text"
     "bottom    bottom    bottom";
@@ -31,6 +30,10 @@ main {
 #app1_text {
   grid-area: app1_text;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 #app1_text a:hover {
   color: rgb(22, 151, 209);
@@ -52,6 +55,10 @@ main {
 #app2_text {
   grid-area: app2_text;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 #app2_text a:hover {
   color: rgb(192, 35, 255);
@@ -73,6 +80,10 @@ main {
 #app3_text {
   grid-area: app3_text;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 #app3_text a:hover {
   color: rgb(165, 199, 57);
@@ -84,10 +95,9 @@ main {
 @media (max-width: 800px) {
   main {
     grid-template-columns: 1fr;
-    grid-template-rows: 1.5fr 0.5fr 2fr 1fr 2fr 1fr 2fr 1fr;
+    grid-template-rows: 1.5fr 2fr 1fr 2fr 1fr 2fr 1fr;
     grid-template-areas:
       "logo"
-      "space"
       "app1"
       "app1_text"
       "app2"
