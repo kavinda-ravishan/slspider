@@ -10,7 +10,7 @@ for (let i = 0; i < splitText.length; i++) {
 }
 
 let char = 0;
-let timer = setInterval(onTick, 250);
+let timer = setInterval(onTick, 100);
 
 function onTick() {
   const span = logoText.querySelectorAll("span")[char];

@@ -1,11 +1,27 @@
 main {
   grid-template-columns: 1fr;
-  grid-template-rows: 1.5fr 2fr 2fr 1fr;
+  grid-template-rows: 1.5fr 2ft 2fr 2fr 1fr;
   grid-template-areas:
     "logo"
+    "chatApp"
     "androidApp1"
     "androidApp2"
     "bottom";
+}
+
+#chatApp {
+  grid-area: chatApp;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#chatApp a:hover {
+  color: rgb(165, 199, 57);
+  text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  font-size: 40px;
+  opacity: 100%;
 }
 
 #androidApp1 {
